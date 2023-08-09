@@ -6,8 +6,7 @@ updates:
       interval: daily
     open-pull-requests-limit: 10
   - package-ecosystem: maven
-    directory: "/wildfly-jakartaee-webapp-archetype/src/main/resources
-/archetype-resources/"
+    directory: "/wildfly-jakartaee-webapp-archetype/src/main/resources/archetype-resources/"
     schedule:
       interval: daily
     open-pull-requests-limit: 10
