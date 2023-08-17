@@ -18,7 +18,7 @@ In file "pom.xml":
 
 In file "src/main/resources/archetype-resources/pom.xml":
 
-* update the version property named "version.jboss.bom"
+* update the version property named "version.wildfly.bom"
 * check whether dependencies have changed.
 * check the plugin versions and update if necessary:
 ** wildfly-maven-plugin: https://repo.maven.apache.org/maven2/org/wildfly/plugins/wildfly-maven-plugin/
