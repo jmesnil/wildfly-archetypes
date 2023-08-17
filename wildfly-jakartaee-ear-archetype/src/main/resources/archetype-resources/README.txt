@@ -10,7 +10,7 @@ Run the maven goals "wildfly:undeploy"
 
 DataSource:
 This sample includes a "persistence.xml" file in the EJB project. This file defines
-a persistence unit "${rootArtifactId}PersistenceUnit" which uses the JakartaEE default database.
+a persistence unit "multiPersistenceUnit" which uses the JakartaEE default database.
 
 In production environment, you should define a database in WildFly config and point to this database
 in "persistence.xml".
@@ -26,7 +26,7 @@ In case you don't want to use JSF, simply delete this file and "src/main/webapp/
 Testing:
 This sample is prepared for running unit tests with the Arquillian framework.
 
-The configuration can be found in "${rootArtifactId}/pom.xml":
+The configuration can be found in "multi/pom.xml":
 
 Three profiles are defined:
 -"default": no integration tests are executed.
@@ -54,6 +54,6 @@ You can delete this test file if no tests are necessary.
 Why integration tests instead of the "maven-surefire-plugin" testrunner?
 The Arquillian test runner deploys the EAR file to the WildFly server and thus you have to build it yourself with the ShrinkWrap API.
 The goal "verify" (which triggers the maven-surefire-plugin) is executed later in the maven build lifecyle than the "test" goal so that the target 
-artifacts ("${rootArtifactId}-ejb.jar" and "${rootArtifactId}-web.war") are already built. You can build
+artifacts ("multi-ejb.jar" and "multi-web.war") are already built. You can build
 the final EAR by including those files. The "maven-surefire-plugin" is executed before the JAR/WAR files
 are created, so those JAR/WAR files would have to be built in the "@Deployment" method, too. 
