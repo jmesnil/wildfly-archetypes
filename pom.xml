@@ -21,7 +21,7 @@
     <description>Aggregator for WildFly Maven archetypes</description>
 
     <properties>
-        <version.jboss.bom>29.0.0.Final</version.jboss.bom>
+        <version.wildfly.bom>29.0.0.Final</version.wildfly.bom>
         <version.wildfly.core>21.1.0.Final</version.wildfly.core>
         <version.wildfly.maven.plugin>4.2.0.Final</version.wildfly.maven.plugin>
 
@@ -52,7 +52,7 @@
             <dependency>
                 <groupId>org.wildfly.bom</groupId>
                 <artifactId>wildfly-ee-with-tools</artifactId>
-                <version>\${version.jboss.bom}</version>
+                <version>\${version.wildfly.bom}</version>
                 <type>pom</type>
             </dependency>
         </dependencies>

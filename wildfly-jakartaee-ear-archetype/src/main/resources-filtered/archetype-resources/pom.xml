@@ -43,7 +43,7 @@
         <version.wildfly.maven.plugin>${version.wildfly.maven.plugin}</version.wildfly.maven.plugin>
 
         <!-- Define the version of the JBoss BOMs we want to import to specify tested stacks. -->
-        <version.jboss.bom>${version.jboss.bom}</version.jboss.bom>
+        <version.wildfly.bom>${version.wildfly.bom}</version.wildfly.bom>
 
         <!-- other plugin versions -->
         <version.compiler.plugin>${version.compiler.plugin}</version.compiler.plugin>
@@ -118,7 +118,7 @@
             <dependency>
                 <groupId>org.wildfly.bom</groupId>
                 <artifactId>wildfly-ee-with-tools</artifactId>
-                <version>\${version.jboss.bom}</version>
+                <version>\${version.wildfly.bom}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
