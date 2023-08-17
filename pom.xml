@@ -61,7 +61,7 @@
             <dependency>
                 <groupId>org.wildfly.bom</groupId>
                 <artifactId>wildfly-ee-with-tools</artifactId>
-                <version>\${version.wildfly.bom}</version>
+                <version>${version.wildfly.bom}</version>
                 <type>pom</type>
             </dependency>
         </dependencies>
