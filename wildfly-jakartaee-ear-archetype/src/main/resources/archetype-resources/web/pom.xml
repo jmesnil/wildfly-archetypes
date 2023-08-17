@@ -19,13 +19,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${rootArtifactId}</artifactId>
-        <version>${version}</version>
+        <groupId>foo.bar</groupId>
+        <artifactId>multi</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>${rootArtifactId}-web</artifactId>
+    <artifactId>multi-web</artifactId>
     <packaging>war</packaging>
-    <name>${rootArtifactId} - web</name>
+    <name>multi - web</name>
     <description>This is the web POM file</description>
 
     <dependencies>
@@ -56,7 +56,7 @@
         <!-- Dependency on the EJB module so we can use it's services if needed -->
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>${rootArtifactId}-ejb</artifactId>
+            <artifactId>multi-ejb</artifactId>
             <type>ejb</type>
             <scope>provided</scope>
         </dependency>

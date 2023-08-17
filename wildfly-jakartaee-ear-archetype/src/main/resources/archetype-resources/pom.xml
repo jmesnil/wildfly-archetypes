@@ -18,12 +18,12 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>${groupId}</groupId>
-    <artifactId>${rootArtifactId}</artifactId>
-    <version>${version}</version>
+    <groupId>foo.bar</groupId>
+    <artifactId>multi</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     
     <packaging>pom</packaging>
-    <name>${rootArtifactId}</name>
+    <name>multi</name>
     <description>Insert description for your project here.</description>
 
     <modules>
@@ -51,7 +51,7 @@
         <version.ejb.plugin>3.2.1</version.ejb.plugin>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
         <version.failsafe.plugin>3.0.0</version.failsafe.plugin>
-        <version.war.plugin>3.3.2</version.war.plugin>
+        <version.war.plugin>3.4.0</version.war.plugin>
 
         <!-- maven-compiler-plugin -->
         <maven.compiler.release>11</maven.compiler.release>
@@ -95,7 +95,7 @@
                 to repeat ourselves in every module -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>${rootArtifactId}-ejb</artifactId>
+                <artifactId>multi-ejb</artifactId>
                 <version>${project.version}</version>
                 <type>ejb</type>
             </dependency>
@@ -104,7 +104,7 @@
                 ourselves in every module -->
             <dependency>
                 <groupId>${project.groupId}</groupId>
-                <artifactId>${rootArtifactId}-web</artifactId>
+                <artifactId>multi-web</artifactId>
                 <version>${project.version}</version>
                 <type>war</type>
                 <scope>compile</scope>

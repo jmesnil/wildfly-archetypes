@@ -19,13 +19,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${rootArtifactId}</artifactId>
-        <version>${version}</version>
+        <groupId>foo.bar</groupId>
+        <artifactId>multi</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>${rootArtifactId}-ejb</artifactId>
+    <artifactId>multi-ejb</artifactId>
     <packaging>ejb</packaging>
-    <name>${rootArtifactId} - ejb</name>
+    <name>multi - ejb</name>
     <description>This is the EJB POM file</description>
 
     <dependencies>
