@@ -21,13 +21,13 @@
     <description>Aggregator for WildFly Maven archetypes</description>
 
     <properties>
-        <version.wildfly.bom>29.0.0.Final</version.wildfly.bom>
-        <version.wildfly.core>21.1.0.Final</version.wildfly.core>
-        <version.wildfly.maven.plugin>4.2.0.Final</version.wildfly.maven.plugin>
+        <version.wildfly.bom>28.0.0.Final</version.wildfly.bom>
+        <version.wildfly.core>20.0.0.Final</version.wildfly.core>
+        <version.wildfly.maven.plugin>4.0.0.Final</version.wildfly.maven.plugin>
 
         <version.compiler.plugin>3.9.0</version.compiler.plugin>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
-        <version.failsafe.plugin>3.1.2</version.failsafe.plugin>
+        <version.failsafe.plugin>3.0.0</version.failsafe.plugin>
         <version.war.plugin>3.4.0</version.war.plugin>
         <version.ear.plugin>3.3.0</version.ear.plugin>
         <version.ejb.plugin>3.2.1</version.ejb.plugin>
