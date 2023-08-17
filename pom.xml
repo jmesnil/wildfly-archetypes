@@ -20,6 +20,15 @@
     <name>WildFly Archetypes: Aggregator</name>
     <description>Aggregator for WildFly Maven archetypes</description>
 
+    <!--
+        To simplify the maintenance of the archetypes all versions of the
+        dependencies and plugins that are references by the generated project
+        are defined in the parent pom and evaluated when the archetype are built.
+
+        This project defines pluginManagment and dependencyManagemet to trigger 
+        dependencies updates even though this project and its submodules does not
+        actually use these dependencies.
+    -->
     <properties>
         <version.wildfly.bom>28.0.0.Final</version.wildfly.bom>
         <version.wildfly.core>20.0.0.Final</version.wildfly.core>
