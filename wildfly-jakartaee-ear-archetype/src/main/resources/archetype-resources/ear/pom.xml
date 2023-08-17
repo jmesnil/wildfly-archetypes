@@ -19,26 +19,26 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>${groupId}</groupId>
-        <artifactId>${rootArtifactId}</artifactId>
-        <version>${version}</version>
+        <groupId>foo.bar</groupId>
+        <artifactId>multi</artifactId>
+        <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>${rootArtifactId}-ear</artifactId>
+    <artifactId>multi-ear</artifactId>
     <packaging>ear</packaging>
-    <name>${rootArtifactId} - ear</name>
+    <name>multi - ear</name>
     <description>This is the EAR POM file</description>
 
     <dependencies>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>${rootArtifactId}-ejb</artifactId>
+            <artifactId>multi-ejb</artifactId>
             <type>ejb</type>
         </dependency>
 
         <!-- Depend on the EJB module and WAR so that we can package them -->
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>${rootArtifactId}-web</artifactId>
+            <artifactId>multi-web</artifactId>
             <type>war</type>
         </dependency>
     </dependencies>
@@ -59,14 +59,14 @@
                         have any modules (EJB-JARs and WARs) use them -->
                     <defaultLibBundleDir>lib</defaultLibBundleDir>
                     <modules>
-                    <!-- Default context root of the web app is /${rootArtifactId}-web.
+                    <!-- Default context root of the web app is /multi-web.
                         If a custom context root is needed, uncomment the following snippet to
                         register our War as a web module and set the contextRoot property -->
                     <!--
                     <webModule>
                         <groupId>${project.groupId}</groupId>
-                        <artifactId>${rootArtifactId}-web</artifactId>
-                        <contextRoot>/${rootArtifactId}</contextRoot>
+                        <artifactId>multi-web</artifactId>
+                        <contextRoot>/multi</contextRoot>
                     </webModule>
                     -->
                     </modules>
