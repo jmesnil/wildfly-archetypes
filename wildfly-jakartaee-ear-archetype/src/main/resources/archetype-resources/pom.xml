@@ -50,7 +50,7 @@
         <version.ear.plugin>3.3.0</version.ear.plugin>
         <version.ejb.plugin>3.2.1</version.ejb.plugin>
         <version.surefire.plugin>3.0.0</version.surefire.plugin>
-        <version.failsafe.plugin>3.0.0</version.failsafe.plugin>
+        <version.failsafe.plugin>3.1.2</version.failsafe.plugin>
         <version.war.plugin>3.3.2</version.war.plugin>
 
         <!-- maven-compiler-plugin -->
