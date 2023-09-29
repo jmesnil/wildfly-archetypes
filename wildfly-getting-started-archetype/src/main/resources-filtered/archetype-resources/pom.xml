@@ -35,8 +35,9 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
         <!-- JBoss dependency versions -->
+        <version.wildfly>${version.wildfly.bom}</version.wildfly>
         <version.wildfly.maven.plugin>${version.wildfly.maven.plugin}</version.wildfly.maven.plugin>
-        <version.wildfly.bom>${version.wildfly.bom}</version.wildfly.bom>
+        <version.resteasy.client>6.2.4.Final</version.resteasy.client>
 
         <!-- other plugin versions -->
         <version.compiler.plugin>${version.compiler.plugin}</version.compiler.plugin>
@@ -85,7 +86,7 @@
             <dependency>
                 <groupId>org.wildfly.bom</groupId>
                 <artifactId>wildfly-ee-with-tools</artifactId>
-                <version>\${version.wildfly.bom}</version>
+                <version>\${version.wildfly}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
@@ -130,7 +131,7 @@
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-client</artifactId>
-            <version>6.2.4.Final</version>
+            <version>\${version.resteasy.client}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
@@ -168,7 +169,7 @@
                 <configuration>
                     <feature-packs>
                         <feature-pack>
-                            <location>org.wildfly:wildfly-galleon-pack:\${version.wildfly.bom}</location>
+                            <location>org.wildfly:wildfly-galleon-pack:\${version.wildfly}</location>
                         </feature-pack>
                     </feature-packs>
                     <layers>
